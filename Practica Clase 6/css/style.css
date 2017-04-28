@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0; /* El body viene automaticamente con margenes. Se los saca para que quede todo pegado al borde de la pantalla. */
+  font-size: 10px;
+}
+
+.boxA h2, .boxB h2, .boxC h2{
+  font-size: 2.8em;
+}
+
+.boxA p, .boxB p, .boxC p{
+  font-size: 1.3em;
+}
+
+.boxA p strong, .boxB p strong, .boxC p strong{
+  font-size: 1.153em;
+}
+
+.container{
+  max-width: 2000px;
+  background-color: rgb(102, 140, 113);
+  border: solid 10px #f00;
+  margin: auto;
+}
+
+.main-header{
+  width: 100%;
+  min-height: 150px;
+  background-color: rgb(146, 195, 97);
+  border: solid 5px #00f;
+}
+
+.boxA{
+  width: 20.83%;
+  background-color: rgb(178, 200, 98);
+  float: left;
+}
+
+.boxB{
+  width: 66.66%;
+  background-color: rgb(98, 197, 200);
+  float: left;
+  margin: 0 2.083%;
+}
+
+.boxC{
+  width: 8.33%;
+  background-color: rgb(189, 98, 200);
+  float: left;
+}
+
+.cleaner{
+  clear: both;
+}
+
+@media (max-width: 2000px) {
+  .boxA{
+    width: 29.16%;
+  }
+  .boxB{
+    margin: 0 0 0 4.166%;
+  }
+  .boxC{
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .boxA{
+  clear: both;
+  float: none;
+  width: 100%;
+  }
+  .boxB{
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}

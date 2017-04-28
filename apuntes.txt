@@ -1,0 +1,78 @@
+28-04-17=======================================================================
+				
+				Comandos de la terminal:
+
+Lista de las cosas adentro de una carpeta:
+ls -> Mac y Linux
+dir -> Windows y Linux
+
+!ES CASE SENSITIVE
+Cambiar de carpeta (directorio):
+cd [nombre]
+
+Crear una carpeta:
+mkdir [nombre]
+
+Crear un archivo:
+touch [nombre].[extension]
+
+===============================================================================
+
+				Para instalar Git:
+
+ - Buscar Git SCM
+ - Descargar e instalar la version correspondiente al sistema operativo
+
+===============================================================================	
+	
+
+				Comandos de Git:
+
+Git crea un REPOSITORIO (Almacén)
+Puede ser de 2 tipos:
+ - LOCAL: En el disco duro de la PC
+ - REMOTO: En la nube
+Tiende a usarse un repositorio por proyecto.
+
+!NO CREAR EN CUALQUIER LADO. Hay que buscar un sitio donde crearlo.
+Crear un REPOSITORIO:
+git init
+
+Agregar un archivo nuevo al REPOSITORIO:
+git add [nombre]
+ - CASO ESPECIAL: Agrega todo lo que haya en la carpeta:
+   git add all 
+   git add .
+
+Comprobar lo que sucede en el REPOSITORIO:
+git status
+
+Cuando los archivos estan adentro del REPOSITORIO, Git los llama CACHE.
+
+Para remover un archivo del CACHE:
+git rm --cached [nombre.extension]
+ - Hacer esto NO BORRA el archivo original, solo lo saca del repositorio.
+
+!PARA PODER HACER commit, HAY QUE ESPECIFICAR EL USUARIO
+Guarda la version, su autoria, y su motivo.
+(Hacer un "paquete" con los archivos listos del CACHE):
+git commit -m "[motivo]"
+
+Para especificar el usuario de Git:
+git config user.name "[nombre de usuario]"
+git config user.email "[email]"
+ - "--global" hace que todo lo que se haga con Git en la maquina este a tu
+   nombre. !SOLO USAR EN UNA COMPUTADORA PRIVADA.
+   git config --global user.name "[nombre de usuario]"
+   git config --global user.email "[email]"
+
+Enviar los archivos desde el servidor LOCAL al servidor REMOTO:
+git push origin master
+	 de donde -> a donde (branch)
+ - Se necesitan el nombre de usuario y la contraseña de GitHub.
+
+Le agrega al repositorio REMOTO uno de ORIGEN.
+git remote add [url]
+
+Para descargar del servidor REMOTO al LOCAL:
+git clone [url]	

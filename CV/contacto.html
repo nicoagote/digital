@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Contacto - CV Nicolás Agote</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="contacto header">
+        <h1 class="titulares">Contacto</h1>
+      </header>
+      <section class="contacto formulario">
+        <form action="script.php" method="post">
+          <label for="nombre_completo">Nombre y apellido*:</label>
+          <input type="text" name="nombre_completo" placeholder="Ejemplo: Juan Smith" id="nombre_completo" required>
+          <br>
+          <br>
+          <label for="correo">Correo electrónico*:</label>
+          <input type="email" name="correo" placeholder="Ejemplo: usuario@gmail.com" id="correo" required>
+          <br>
+          <br>
+          <h3>Asunto:</h3>
+          <select name="asunto">
+            <option value="inicial">-- Seleccione una de las opciones --</option>
+            <option value="work">Estaría interesado en invitarte a una entrevista.</option>
+            <option value="compliment">Me encantó la página, espero que encuentres trabajo pronto.</option>
+            <option value="pagina">Noté que algo no andaba del todo bien en la página...</option>
+            <option value="faltante">Me encantaría que menciones algo más de información en el CV...</option>
+          </select>
+          <br>
+          <br>
+          <p>Su género:</p>
+          <label for="varon">Masculino</label>
+          <input type="radio" name="genero" value="M" id="varon">
+          <br>
+          <label for="mujer">Femenino</label>
+          <input type="radio" name="genero" value="F" id="mujer">
+          <br>
+          <label for="noespecifica">No especifica</label>
+          <input type="radio" name="genero" value="NaN" id="noespecifica">
+          <br>
+          <br>
+          <p>Pasatiempos</p>
+          <label for="nadar">Nadar</label>
+          <input type="checkbox" name="hobbies" value="Nadar" id="nadar">
+          <br>
+          <label for="leer">Leer</label>
+          <input type="checkbox" name="hobbies" value="Leer" id="leer">
+          <br>
+          <label for="teach">Enseñar</label>
+          <input type="checkbox" name="hobbies" value="Enseñar" id="teach">
+          <br>
+          <label for="web">Navegar por la web</label>
+          <input type="checkbox" name="hobbies" value="Web" id="web">
+          <br>
+          <label for="dormir">Dormir</label>
+          <input type="checkbox" name="hobbies" value="Dormir" id="dormir">
+          <br>
+          <br>
+          <p>Comentarios*:</p>
+          <textarea name="comentarios" rows="8" cols="50" required></textarea>
+          <br>
+          <p>* campos obligatorios</p>
+          <br>
+          <button type="reset">Resetear el formulario</button>
+          <input type="submit" value="ENVIAR!">
+        </form>
+      </section>
+      <section class="navegacion">
+        <nav>
+          <a href="index.html">Volver a mi CV</a>
+          <br>
+          <a href="hobbies.html">Explorá mis hobbies</a>
+        </nav>
+      </section>
+      <div class="cleaner"></div>
+      <footer class="contacto footer">
+        <a href="index.html">Todos los derechos reservados</a>
+      </footer>
+    </div>
+  </body>
+</html>
